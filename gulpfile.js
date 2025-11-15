@@ -5,7 +5,7 @@ let gulpminifyCSS = require('gulp-minify-css');
 let gulpminifyUglify = require('gulp-uglify-es').default;
 let gulpminifyConcat = require('gulp-concat');
 let gulpminifyHTML = require('gulp-htmlmin');
-// let clean = require('gulp-clea n');
+let clean = require('gulp-clean');
 
 //--- ada script di sini ---
 
@@ -44,12 +44,12 @@ gulp.task('minify-HTML', async function(){
 	.pipe(gulpConnect.reload());
 });
 
-// gulp.task('clean', function(){
-// 	return gulp.src('dist',{
-// 		read:false,
-// 		allowEmpty:true
-// 	}).pipe(clean());
-// });
+gulp.task('clean', function(){
+	return gulp.src('dist',{
+		read:false,
+		allowEmpty:true
+	}).pipe(clean());
+});
 
 //task watch
 gulp.task('watch',async function(){
@@ -59,6 +59,6 @@ gulp.task('watch',async function(){
 	});
 
 //gulp task default
-// gulp.task('build',  gulp.series('clean', 'minify-CSS', 'minify-JS', 'minify-HTML'));
-gulp.task('default', gulp.series('watch', 'server'));
+gulp.task('build',  gulp.series('clean', 'minify-CSS', 'minify-JS', 'minify-HTML'));
+// gulp.task('default', gulp.series('watch', 'server'));
 
