@@ -1,6 +1,6 @@
 # Ignore compiled output
-/build/
-/dist/
+# /build/
+# /dist/
 
 # Ignore Node.js modules
 /node_modules/

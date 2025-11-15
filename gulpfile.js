@@ -12,6 +12,7 @@ let clean = require('gulp-clean');
 gulp.task('server', async function(){
 
     gulpConnect.server({
+		port: "3100",
         root: "dist",
         livereload: true
     });
@@ -60,5 +61,5 @@ gulp.task('watch',async function(){
 
 //gulp task default
 gulp.task('build',  gulp.series('clean', 'minify-CSS', 'minify-JS', 'minify-HTML'));
-// gulp.task('default', gulp.series('watch', 'server'));
+gulp.task('default', gulp.series('watch', 'server'));
 
