@@ -1,0 +1,642 @@
+/* Navbar*/
+	@font-face{
+		font-family: 'BebasNeue';
+		src: url('font/bebasneue-regular-webfont.woff') format("woff");
+	}
+
+	body{
+		background-color: #f2f2f2;
+	}
+
+	p{
+		color: #cccccc;
+	}
+	.navbar {
+		position: relative;
+		z-index: 1;
+	}
+	.navbar-brand{
+		font-family: Viga; 
+		font-size: 32px;
+	} 
+	.nav-jarak{
+	 	margin: 0px 5px 0px 5px;
+	 	font-weight: 100;
+	 	font-family: 'Roboto', sans-serif;
+
+	}
+
+
+	.jumbotron.container{
+		position: relative;
+		z-index: 1;
+	}
+	.testimonial {
+		margin-top: 60px;
+	}
+	.testimonial h5{
+		text-align : center;
+		font-weight: 200;
+		font-style : italic;
+		font-size  : 24px;
+	}
+
+
+	/*Utility*/
+	.tombol{
+		text-transform: uppercase;
+		border-radius: 45px;
+	}
+	.jumbotron::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 80%;
+		position: absolute;
+		bottom: 0;
+		background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+
+	}
+	/*Jumbotron*/
+	.jumbotron {
+		background-image:url(landing_page_gambar/jumbotron-bg.jpg); 
+		background-size: cover;
+		height: 510px;
+		color: white;
+		text-align: center;
+		position: relative;
+	} 
+
+		.jumbotron .display-4 span{
+		font-weight: bold;
+	}
+	/*info panel*/	
+	.info-panel{
+		box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+		border-radius: 12px;
+		margin-top: -100px;
+		background-color: white;
+	}
+	.info-panel img {
+		width: 80px;
+		height: 80px;
+		margin-right: 25px;
+		margin-bottom: 10px;
+		margin-top: 26px;
+	}
+
+
+	/* working space*/
+	.workingspace{
+		margin-top: 120px;
+		text-align: center;
+	}
+	.workingspace .col-lg-5 h3{
+		font-weight: 300;
+		font-size: 52px;
+		text-transform: uppercase;
+
+	}
+	.workingspace .col-lg-5 h3 span{
+		font-weight: 500;
+	}
+
+	.workingspace p{
+		font-size: 16px ;
+		color: #ACACAC;
+		font-weight: 200;
+		margin: 25px 0; 
+	}
+	 .info-panel h4 {
+	 	font-size: 16px;
+	 	text-transform: uppercase;
+	 	font-weight: bold;
+	  	margin-top: 30px;
+	 }
+	.info-panel p{
+		color: #ACACAC;
+		font-size: 14px;
+
+	}
+
+	.jumbotron .display-4{
+		color: white;
+		margin-top: 150px;
+		font-weight: normal;
+		margin-bottom: 37px;
+	}
+	.testimonial figure img{
+		height: 45px;
+		margin: 20px 10px 5px;
+		opacity: 0.6;
+	}
+	.testimonial figure img.utama{
+		height: 55px;
+		opacity: 1;
+		margin-top: 10px;
+	}
+	.testimonial figure h5 {
+		font-size: 16px;
+		font-weight: bold;
+		font-style: normal;
+		color: #1C2C5D;  
+	}
+	.testimonial figure p{
+		font-size: 12px;
+		color: #ACACAC;
+		margin-top: -5px !important;
+	}
+	.testimonial figcaption{
+		text-align: center;
+	}
+
+
+
+
+/* versi dekstop*/
+/*ketika berada di versi dekstop berbeda jika ketika di versi mobile*/
+@media (min-width: 992px) {
+	.navbar-brand, .nav-link{
+	color: black!important;	
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	}
+	/* ??? */
+	.nav-link:hover::after{
+		content:'';
+		display:block; 
+		border-bottom: 3px solid #3333ff;
+		width: 50%;
+		margin:auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.jumbotron{
+		margin-top: -75px
+		margin-bottom: 30px;
+		height: 640px;
+	}
+	.jumbotron .display-4{
+		margin-bottom: 50px;
+	}
+
+	.workingspace {
+		text-align: left;
+	}
+
+	.testimonial {
+	margin-top: 90px;
+	}
+
+	.testimonial h5{
+	text-align: center;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 32px;
+	}
+	.testimonial figure img{
+		height: 60px;
+	} 
+
+	.testimonial figure img .utama{
+	height: 85px;
+	opacity: 1;
+	margin-top: 10px;
+	}
+
+	.testimonial figure h5{
+		font-size: 16px;
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	.gallery-workingspace{
+		background-color: #fff;
+	}
+	.workingspace .col-lg-5{
+		margin-top: 30px;
+	}
+	.workingspace .col-lg-5 h3{
+		font-weight: 100;
+		font-size: 52px;
+		text-transform: uppercase;
+
+	}
+	.workingspace .col-lg-5 h3 span{
+		font-weight: 500;
+	}
+
+	/*worker galeri foto*/
+	.worker-workingspace{
+		margin-top: 125px;
+		margin-bottom: 170px;
+	}
+	.worker-workingspace .container .col-md-8{
+		margin-bottom: 50px;	
+	}
+	.container .col-md-8 h2{
+		font-size: 40px;
+		font-weight: 300;
+    	margin-bottom: 15px;
+   		line-height: 1.5;
+   		text-align: center;
+   		font-family: 'Roboto', sans-serif;
+    	text-align: center;
+	}
+	.container .col-md-8 p{
+		font-size: 16px;
+		font-weight: 200;
+    	margin-bottom: 25px;
+    	text-align: center;
+    	color: #ACACAC;
+	}
+	.container .col-md-3 .staff-entry{
+		display: block;
+		background: #fff;
+		padding: 30px;
+		border-radius: 4px;
+		box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+	}
+
+	.container .col-md-3 a img{
+		text-align: center;
+		/* border-radius: 3px; */
+		border-radius: 50%;
+		border:3px solid #666;
+		width: 120px;
+		height: 120px;
+		margin: 15px;
+		position: relative;
+	}
+
+	.container .col-md-3 a span{
+		display: block;
+		width: 122px;
+		height: 122px;
+		background-color: rgba(200, 200, 200, 0.7);
+	/* 	overflow: hidden; */
+	/* 	margin-top: -10px;
+		margin-right: -150px; */
+		position: absolute;
+		top: 0;
+		/* top biar nempel ke atas */
+		border-radius: 50%;
+	/* 	text-align: center; */
+		line-height: 120px;
+		/* tulisan biar 120px */
+		margin-top: 45px;
+		margin-left: 33px; 
+		/* margin sepertinya perlu perhitungan .container .gallery img(10px+3px) maybe perlu diselidiki */
+		color: #333;
+		text-shadow: 1px 1px 1px #ddd;
+		opacity: 0;
+		transform: scale(0) rotate(0deg);
+		/* awal 0 degre */
+		transition: 0.4s;
+
+	}
+	.container .staff-entry a:hover span{
+		opacity: 1;
+		transform: scale(1) rotate(360deg);
+		font-family: BebasNeue;
+		/* alkhir 360 degre */
+	}
+	.container .staff-entry {
+		float: left;
+		position: relative;
+		border-radius: 50%;
+		/* float untuk perataan tempat */
+	}
+	.clear {
+		clear: both;
+		/* clear untuk mengatasi float yang mana sudah disetting ke kanan (runtuh)*/
+	}
+	.latar{
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: 999; 
+	}
+
+	.container .staff-entry a:active .latar{
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: 999;
+		width: 800px;
+		height: 700px;
+	}
+	.overlay{
+		position: fixed;
+		top: 0;
+		left: 0;
+		/* bikin penuh layar dan fixed */
+		background-color: rgba(0, 0, 0, 0);
+		z-index: 999;
+		transition: 0.4s;
+		padding: 200px 0;
+		/* biar paling depan */
+	}
+	/* keadaan awal belum full */
+		
+
+	.overlay:target{
+
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+
+	}
+	/* biar saat target bisa full cover */
+
+	.overlay img{
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		max-height: 300px;
+		text-align: center;
+		margin: 50px;
+
+		
+		/* z-index: 999; */
+	}
+	.overlay:target img { 
+		width: 300px;
+		height: 300px;
+		box-shadow: 3px 2px 3px 7px rgba(217, 217, 217, 0.8);
+		animation-name: ZoomOnFade;
+		z-index: 999;
+		margin-top: -20px;
+	}
+
+	.overlay .paragrap-overlay{
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		max-height: 300px;
+		text-align: center;
+		margin: 50px;
+
+	}
+
+	.overlay:target .paragrap-overlay{
+		width: 400px;
+		height: auto;
+		animation-name: ZoomOnFade
+		z-index: 999;
+		left: 50%;
+		margin-top: -25px;
+		margin-left: -210px;
+	/*	margin-left: 500px;*/
+		padding: 6px;
+		box-shadow: 3px 2px 3px 7px rgba(217, 217, 217, 0.8);
+		font-family: "Poppins", Arial, sans-serif;
+		text-align: center;
+
+	}
+	.ul-worker{
+		padding-top: 0px ;
+	}
+	/*.overlay:target .paragrap-overlay img{
+		width: 150px;
+		height: 150px;
+		text-align: center;
+	}*/
+	.overlay a{
+		visibility: hidden;
+		position: absolute;
+		opacity: 0;
+	}
+	.overlay:target a{
+		color: white;
+		background-color: black;
+		border:2px solid white;
+		text-align: center;
+		visibility: visible;
+		left: 50%;
+		margin-left: -27px;
+		padding: 6px ;
+		/* untuk text ke border  */
+		text-decoration: none;
+	/* 	transition: 0.4s; */
+		animation: ZoomDownFade .5s .5s forwards;
+		/* artinya animation(ZoomDownFade) transisi .5s lalu tunggu .5s baru jalan dan forwards untuk berhenti di keadaan ditentukan  */
+	} 
+	.staff-entry .desc{
+		font-family: "Nunito", Arial, sans-serif;
+		text-align: center;
+	}
+	.staff-entry .desc h3{
+		font-size: 22px;
+		color: #303133;
+		font-weight: 400 ;
+		margin:0 0 10px 0;
+		line-height: 1.3;
+
+	}
+	.staff-entry .desc span{
+		display: block;
+	    margin-bottom: 20px;
+	    font-size: 13px;
+	    line-height: 2;
+	    color: gray;
+	    font-family: "Poppins", Arial, sans-serif;
+	    font-weight: 500;
+	}
+
+	.staff-entry .desc p{
+		margin-top: 20px;
+		margin: 0 0 10px;
+		line-height: 1.6;
+		color: gray;
+	}
+
+
+	/* animation */
+	@keyframes ZoomOnFade{
+		0%{
+			transform: scale(0);
+			opacity: 0;
+		}
+		100%{
+			transform: scale(1);
+			opacity: 1;
+		}
+		
+	}
+
+	@keyframes ZoomDownFade{
+		0%{
+			opacity: 0;
+			margin-top: -140px;
+
+		}
+		100%{
+			opacity: 1;
+			margin-top: -80px;
+		}
+	}
+
+	/*game Jan Ken Pon style*/
+	.game_jan_ken_pon{
+		margin-top: 50px;
+	}
+	.container_body_game {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+	}
+	.container_body_game h2{
+		font-family: 'Roboto', sans-serif;
+		font-size: 40px;
+		font-weight: 300;
+		text-align: center;
+	}
+	.container_body_game h3{
+		font-family: 'Roboto', sans-serif;
+		font-weight: normal;
+		color: #ACACAC;
+		font-size: 20px;
+		text-align: center;
+		font-weight: 300;
+	}
+	.container_body_game p{
+		text-align: center;
+		color: #ACACAC;
+	}
+
+	.container_body_game h3 span{
+		font-weight: 500;
+	}
+	.siluwet {
+	    width: 500px;
+	    margin:  auto;
+	    height: 800px;
+	}
+	.area-komputer {
+	    width: 560px;
+	    height: 250px;
+	    margin: 5px auto;
+	    background-color: lightblue;
+	    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 100%);
+	    position: relative;
+	    padding-top: 40px;
+	    box-sizing: border-box;
+	    border-radius: 40px 40px 0 0;
+	}
+
+	.area-player {
+	    width: 560px;
+	    height: 250px;
+	    margin: 5px auto;
+	    background-color: lightgreen;
+	    background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	    position: relative;
+	    border-radius: 0 0 40px 40px;
+	}
+
+	.info {
+	    width: 150px;
+	    height: 60px;
+	    border: 5px solid salmon;
+	    position: absolute;
+	    left: 50%;
+	    margin-left: -75px;
+	    margin-top: -30px;
+	    background-color: white;
+	    border-radius: 30px;
+	    z-index: 1;
+	    text-align: center;
+	    color: #660000;
+	    font-size: 26px;
+	    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	    font-weight: 500;
+	}
+	.infoPlayer {
+	    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	    width: 100px;
+	    position: absolute;
+	    left: 50%;
+	    margin-left: 150px;
+	    margin-top: -40px;
+	    z-index: 1;
+	    background-color: white;
+	    text-align: center;
+	    color: #660000;
+	}
+
+	.infoPlayer .col{
+	    border: 3px solid salmon;
+	    height: 30px;
+	}
+
+	.infoCom {
+	    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	    width: 100px;
+	    position: absolute;
+	    right: 50%;
+	    margin-right: 150px;
+	    margin-top: -40px;
+	    z-index: 1;
+	    background-color: white;
+	    text-align: center;
+	    color: #660000;
+	}
+
+	.infoCom .col{
+	    border: 3px solid salmon;
+	    height: 30px;
+	}
+
+
+	ul {
+	    padding-top: 80px;
+	    padding-left: 25px;
+	}
+
+	li {
+	    display: inline-block;
+	    margin: 0 18px;
+	}
+
+	img#game {
+	    width: 130px;
+	    height: 130px;
+	    display: block;
+	    margin: auto;
+	    border-radius: 50%;
+	    border: 3px solid salmon;
+	}
+
+	.Stone, .Scicross, .Papper {
+	    transition: .3s;
+	    position: relative;
+	    top:0;
+	    cursor: pointer;
+	}
+
+	.gajah:hover, .semut:hover, .orang:hover, .active {
+	    box-shadow: 0 0 10px 5px limegreen;
+	}
+
+	.gajah:active, .semut:active, .orang:active {
+	    top: 2px;
+	}
+
+	/*footer*/
+
+	.footer {
+		margin-top: 100px;
+
+	}
+	.footer p{
+		color: #ACACAC;
+		font-size: 18px;
+	}
+
+	/* kur
+	ang bisa width di rekayasa
+	.nav-link:hover {
+		border-bottom: 3px solid #3333ff;
+		width: 30% ;
+	}*/
+
+}
